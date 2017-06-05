@@ -80,6 +80,11 @@ public class DistBebidasUI extends javax.swing.JFrame {
         jMenuGerenciar.setText("Gerenciar");
 
         jMenuItem5.setText("Clientes");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
         jMenuGerenciar.add(jMenuItem5);
 
         jMenuItem6.setText("Fornecedores");
@@ -149,7 +154,8 @@ public class DistBebidasUI extends javax.swing.JFrame {
     private void jMenuItemCadastroFornecedorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuItemCadastroFornecedorMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItemCadastroFornecedorMouseClicked
-
+        
+    
     private void jMenuItemCadastroFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCadastroFornecedorActionPerformed
             // TODO add your handling code here:
         new TelaCadastroFornecedor().setVisible(true);
@@ -167,6 +173,12 @@ public class DistBebidasUI extends javax.swing.JFrame {
         DistBebidasUI.this.dispose();
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        // TODO add your handling code here:
+        new TelaConsultarCliente().setVisible(true);
+        DistBebidasUI.this.dispose();
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+       
     
     /**
      * @param args the command line arguments
